@@ -1,13 +1,13 @@
 class Zoo():
-  def __init__(self, name, animal_name=[]):
+  def __init__(self, name, animals=[]):
     self.name = name
-    self.animal_name = []
+    self.animals = []
   def add_animal(self, animal_name):
-    self.animal_name.append(animal_name)
+    self.animals.append(animal_name)
     return self
   def print_all_animals(self):
     print(f"In {self.name}, we have the following animals: ")
-    for animal in self.animal_name:
+    for animal in self.animals:
       animal.display_info()
 
 class Animal():
